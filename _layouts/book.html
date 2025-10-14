@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="book">
+  <div class="book-cover">
+    <div class="book-cover-front">
+      <img src="{{ page.cover }}" alt="{{ page.title }} cover" />
+    </div>
+    <div class="book-cover-back">
+      <img src="{{ page.back_cover }}" alt="{{ page.title }} back cover" />
+    </div>
+  </div>
+  <div class="book-info">
+    <h1 class="book-title">{{ page.title }}</h1>
+    <div class="book-description">{{ page.content }}</div>
+    {% if page.content_warning %}
+      <p class="book-content-warning">
+        <strong>Content Warning:</strong> {{ page.content_warning }}
+      </p>
+    {% endif %}
+    <ul class="book-links">
+      {% if page.book_url %}
+        <li><a href="{{ page.book_url }}" class="book-link-book_url">Book</a></li>
+      {% endif %}
+      {% if page.ebook_url %}
+        <li><a href="{{ page.ebook_url }}" class="book-link-ebook">Ebook</a></li>
+      {% endif %}
+      {% if page.audiobook_url %}
+        <li><a href="{{ page.audiobook_url }}" class="book-link-audiobook">Audiobook</a></li>
+      {% endif %}
+      {% if page.goodreads %}
+        <br /><li><a href="{{ page.goodreads }}" class="book-link-goodreads">Goodreads Reviews</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

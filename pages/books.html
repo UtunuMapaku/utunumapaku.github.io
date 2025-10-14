@@ -1,0 +1,23 @@
+---
+layout: default
+title: Books
+permalink: /books/
+nav_id: books
+---
+<div class="books-list">
+  {% assign books = site.books | sort: "date" %}
+  {% for book in books %}
+    <div class="book">
+      <div class="book-cover">
+        <a href="{{ book.url }}" class="book-cover-link">
+          <img src="{{ book.cover }}" alt="{{ book.title }} cover" />
+        </a>
+      </div>
+      <div class="book-info">
+        <h1 class="book-title"><a href="{{ book.url }}">{{ book.title }}</a></h1>
+        {{book.content}}
+        <br />
+      </div>
+    </div>
+  {% endfor %}
+</div>

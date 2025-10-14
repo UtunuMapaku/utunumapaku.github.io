@@ -1,0 +1,356 @@
+@import
+  "fontawesome/fontawesome",
+  "fontawesome/solid",
+  "fontawesome/brands",
+  "fonts",
+  "variables",
+  "normalize",
+  "pages/books";
+
+  // Desktop
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+// Tablet
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+// Mobile
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gentium Book Plus", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $base-font-size;
+  // small: 0.9
+  // smaller: 0.8
+  // smallest: 0.7
+  line-height: 1.5;
+  color: $body-text-color;
+}
+
+.site-header {
+  width: 100%;
+  position: relative;
+  color: $header-color;
+  text-shadow: $header-text-shadow;
+  img.site-banner {
+    display: block;
+    width: 100%;
+    max-height: 12em;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    font-family: "Skranji", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    left: 20px;
+    top: 10px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  h2 {
+    position: absolute;
+    font-family: "Syncopate", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    left: 20px;
+    top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  nav {
+   position: absolute;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   text-shadow: none;
+  }
+}
+
+nav.site-nav {
+  text-align: center;
+  background-color: rgba(black, 0.7);
+  overflow: hidden;
+  img.avatar {
+    display: block;
+    height: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 0.9em;
+  }
+  a.site-nav-link {
+    overflow: hidden;
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: $header-nav-text-color;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba($header-nav-text-color, 0.1);
+      color: darken($header-nav-text-color, 10%);
+    }
+  }
+}
+
+.site-content {
+  display: block;
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 1.7em;
+  @include small {
+    padding: 0.5em;
+  }
+  & > article {
+    max-width: $max-article-width;
+    margin: 0 auto;
+    padding: 0.5em;
+  }
+}
+
+.site-footer {
+  font-size: 0.8em;
+  padding: 1.7em 1.6%;
+  background-color: black;
+
+  blockquote {
+    cite {
+      display: block;
+      font-size: 1em;
+      text-align: right;
+      &:before {
+        content: "— ";
+      }
+    }
+  }
+}
+
+.site-footer-inner {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+a {
+  color: $body-link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.book-cover {
+  a {
+    display: block;
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.site-content {
+  word-wrap: break-word;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  @include large {
+    max-width: $max-content-width;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  @include medium {
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: $section-headings-color;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: $code-text-color;
+    background-color: $code-bg-color;
+    border-radius: 0.3rem;
+  }
+
+  pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: $code-text-color;
+    word-wrap: normal;
+    background-color: $code-bg-color;
+    border: solid 1px $border-color;
+    border-radius: 0.3rem;
+
+    > code {
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      color: $code-text-color;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  .highlight {
+    margin-bottom: 1rem;
+
+    pre {
+      margin-bottom: 0;
+      word-break: normal;
+    }
+  }
+
+  .highlight pre,
+  pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  pre code,
+  pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+
+    &:before,
+    &:after {
+      content: normal;
+    }
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+  }
+
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: $blockquote-text-color;
+    border-left: 0.3rem solid $border-color;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    cite {
+      display: block;
+      font-size: 0.7em;
+      color: $blockquote-text-color;
+      text-align: right;
+      &:before {
+        content: "— ";
+      }
+    }
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    -webkit-overflow-scrolling: touch;
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 0.5rem 1rem;
+      border: 1px solid $table-border-color;
+    }
+  }
+
+  dl {
+    padding: 0;
+
+    dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+}

@@ -1,0 +1,63 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+nav_id: home
+---
+<div class="home-header">
+    <!--<div class="home-avatar">
+      <img src="/images/Utunu-Smile.png" height="256" width="256"/>
+    </div>-->
+    <div class="home-header-text">
+      <p>
+        Welcome to Mapaku Village!
+      </p>
+      <p>
+        Named for a place in a world I built when I was first dipping my toes into 
+        storytelling, Mapaku Village is where I publish my various books. Honestly, 
+        I never thought I’d write a book, let alone three (and soon a fourth!), but 
+        it’s been a wonderful experience—a creative outlet that I can share with 
+        others, which is something I feel to be even more important in this day and age.
+      </p>
+      <p>
+        You’ll find information here about my books and stories, as well as a bit about 
+        me if you’re bored. There’s a link to my shop as well, if anything sparks your 
+        interest!
+      </p>
+      <p>
+        Beyond reviews on Goodreads, Amazon, or other spots, people have reached out 
+        to me directly to tell me what they thought of my books and what they meant to 
+        them, and I think that is what affects me most as a writer. And it keeps me 
+        going, fueling that drive to continue making stories for others to enjoy.
+      </p>
+      <p>
+        So, a big thank you to all my readers, especially those who’ve taken the time 
+        to write a review or contact me!
+      </p>
+      <p>
+        -Utunu (<a href="mailto:mapakuvillage@gmail.com">mapakuvillage@gmail.com</a>)
+      </p>
+    </div>
+</div>
+<div class="home-books">
+  {% assign books = site.books | sort: "date" %}
+  <!--{% for book in books %}
+    <div class="book">
+      <div class="book-cover">
+        <a href="{{ book.url }}" class="book-cover-link">
+          <img src="{{ book.cover }}" alt="{{ book.title }} cover" />
+        </a>
+      </div>
+    </div>
+  {% endfor %}-->
+  <!--{% for book in books %}
+    <div class="book">
+      <div class="book-cover">
+        <a href="{{ book.url }}" class="book-cover-link">
+          <img src="{{ book.back_cover }}" alt="{{ book.title }} cover" />
+        </a>
+      </div>
+    </div>
+  {% endfor %}-->
+</div>

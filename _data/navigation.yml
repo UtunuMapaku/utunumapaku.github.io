@@ -1,0 +1,12 @@
+- title: Home
+  page: index.html
+  id: home
+- title: Books
+  page: pages/books.html
+  id: books
+- title: Shop
+  page: pages/shop.html
+  id: shop
+- title: About
+  page: pages/about.md
+  id: about

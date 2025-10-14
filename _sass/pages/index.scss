@@ -1,0 +1,12 @@
+.home-header {
+  display: grid;
+  grid-template-columns: 256px auto;
+  gap: 1em;
+}
+
+.home-books {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1em;
+}

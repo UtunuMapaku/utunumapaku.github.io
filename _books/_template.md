@@ -1,0 +1,12 @@
+---
+title:
+front_cover:
+back_cover:
+adult:
+date:
+goodreads:
+book_url:
+ebook_url:
+audiobook_url:
+content_warning:
+---

@@ -1,0 +1,16 @@
+.books-page .book {
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  gap: 1.5rem;
+  .book-info {
+    h1 {
+      margin: 0;
+      vertical-align: top;
+    }
+  }
+}
+.book-page .book {
+  display: grid;
+  grid-template-columns: 12em 1fr;
+  gap: 1.5rem;
+}

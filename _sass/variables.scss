@@ -1,0 +1,30 @@
+// Breakpoints between desktop and tablet (large) and tablet and mobile (medium)
+$large-breakpoint: 64em !default;
+$medium-breakpoint: 42em !default;
+$base-font-size: 18px !default;
+$max-content-width: 55em !default;
+$max-article-width: 38em !default;
+
+// Default Colors
+$body-text-color: #606c71 !default;
+$body-link-color: #1e6bb8 !default;
+
+// Header
+$header-color: #fff !default;
+// offset-x | offset-y | blur-radius | color
+$header-text-shadow: 1px 1px 3px black !default;
+//$header-nav-text-color: #1e6bb8 !default;
+$header-nav-text-color: #93c4f5 !default;
+
+// Text
+$section-headings-color: #233339 !default;
+$blockquote-text-color: #819198 !default;
+
+// Code
+$code-bg-color: #f3f6fa !default;
+$code-text-color: #567482 !default;
+
+// Borders
+$border-color: #dce6f0 !default;
+$table-border-color: #e9ebec !default;
+$hr-border-color: #eff0f1 !default;

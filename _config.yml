@@ -1,0 +1,88 @@
+# Welcome to Jekyll!
+#
+# Documentation for jekyll is available at https://jekyllrb.com/docs/
+#
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+
+
+# Search Engine Optimization for {% seo %} in default template
+# Documentation: https://github.com/jekyll/jekyll-seo-tag
+
+## Title
+# Your site's title (e.g., Ben's Awesome Site, The GitHub Blog, etc.), used as
+# part of the title tag like Home | Ben's Awesome Site
+title: Mapaku Village
+
+## Tagline
+# A short description (e.g., A blog dedicated to reviewing cat gifs), used as
+# part of the title tag like Ben's Awesome Site | A blog dedicated to reviewing
+# cat gifs instead of Ben's Awesome Site | Long description about a blog
+# dedicated to reviewing cat gifs that would be used when page.title is not defined.
+tagline: Speculative Fiction by Utunu
+
+## Description
+# A longer description used for the description meta tag. Also used as fallback
+# for pages that don't provide their own description, and also as part of the
+# page's title tag if neither page.title nor site.tagline has been defined.
+description: >- # this means to ignore newlines until "baseurl:"
+  Speculative Fiction by Utunu
+
+## Per file settings
+# The SEO tag will respect the following YAML front matter if included in a post, page, or document:
+# ---
+# title:       - The title of the post, page, or document
+# description: - A short description of the page's content
+# image:       - URL to an image associated with the post, page, or document (e.g., /assets/page-pic.jp
+# ---
+# For more on Front Matter, see: https://jekyllrb.com/docs/front-matter/
+
+
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+header:
+  title: Mapaku Village
+  subtitle: Speculative Fiction by Utunu
+email: mapakuvillage@gmail.com
+permalink: /:year/:title # For blog posts: /2020/this-year-is-going-to-be-great
+date_format: "%b %-d, %Y" # "Jan 1, 2020", see https://strftime.net
+timezone: "America/Chicago" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Pages and Data
+collections:
+  books:
+    output: true
+defaults:
+  - scope:
+      path: "_books"
+    values:
+      layout: book
+      nav_id: books
+      main_class: book
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Rakefile
+  - "**/_template.md"
+  - _notes/
