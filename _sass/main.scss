@@ -109,6 +109,24 @@ nav.site-nav {
   }
 }
 
+cite.cite-right {
+  display: block;
+  font-size: 1em;
+  text-align: right;
+  &:before {
+    content: "— ";
+  }
+}
+
+cite.cite-left {
+  display: block;
+  font-size: 1em;
+  text-align: left;
+  &:before {
+    content: "— ";
+  }
+}
+
 .site-content {
   display: block;
   max-width: $max-content-width;
@@ -128,17 +146,6 @@ nav.site-nav {
   font-size: 0.8em;
   padding: 1.7em 1.6%;
   background-color: black;
-
-  blockquote {
-    cite {
-      display: block;
-      font-size: 1em;
-      text-align: right;
-      &:before {
-        content: "— ";
-      }
-    }
-  }
 }
 
 .site-footer-inner {

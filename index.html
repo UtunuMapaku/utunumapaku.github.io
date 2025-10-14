@@ -6,43 +6,46 @@ layout: home
 nav_id: home
 ---
 <div class="home-header">
-    <!--<div class="home-avatar">
+    {% comment %}
+    <div class="home-avatar">
       <img src="/images/Utunu-Smile.png" height="256" width="256"/>
-    </div>-->
+    </div>
+    {% endcomment %}
     <div class="home-header-text">
-      <p>
+      <h3>
         Welcome to Mapaku Village!
-      </p>
+      </h3>
       <p>
-        Named for a place in a world I built when I was first dipping my toes into 
-        storytelling, Mapaku Village is where I publish my various books. Honestly, 
-        I never thought I’d write a book, let alone three (and soon a fourth!), but 
-        it’s been a wonderful experience—a creative outlet that I can share with 
+        Named for a place in a world I built when I was first dipping my toes into
+        storytelling, Mapaku Village is where I publish my various books. Honestly,
+        I never thought I’d write a book, let alone three (and soon a fourth!), but
+        it’s been a wonderful experience—a creative outlet that I can share with
         others, which is something I feel to be even more important in this day and age.
       </p>
       <p>
-        You’ll find information here about my books and stories, as well as a bit about 
-        me if you’re bored. There’s a link to my shop as well, if anything sparks your 
+        You’ll find information here about my books and stories, as well as a bit about
+        me if you’re bored. There’s a link to my shop as well, if anything sparks your
         interest!
       </p>
       <p>
-        Beyond reviews on Goodreads, Amazon, or other spots, people have reached out 
-        to me directly to tell me what they thought of my books and what they meant to 
-        them, and I think that is what affects me most as a writer. And it keeps me 
+        Beyond reviews on Goodreads, Amazon, or other spots, people have reached out
+        to me directly to tell me what they thought of my books and what they meant to
+        them, and I think that is what affects me most as a writer. And it keeps me
         going, fueling that drive to continue making stories for others to enjoy.
       </p>
       <p>
-        So, a big thank you to all my readers, especially those who’ve taken the time 
+        So, a big thank you to all my readers, especially those who’ve taken the time
         to write a review or contact me!
       </p>
       <p>
-        -Utunu (<a href="mailto:mapakuvillage@gmail.com">mapakuvillage@gmail.com</a>)
+        <cite class="cite-left">Utunu (<a href="mailto:mapakuvillage@gmail.com">mapakuvillage@gmail.com</a>)</cite>
       </p>
     </div>
 </div>
+{% comment %}
 <div class="home-books">
   {% assign books = site.books | sort: "date" %}
-  <!--{% for book in books %}
+  {% for book in books %}
     <div class="book">
       <div class="book-cover">
         <a href="{{ book.url }}" class="book-cover-link">
@@ -50,8 +53,8 @@ nav_id: home
         </a>
       </div>
     </div>
-  {% endfor %}-->
-  <!--{% for book in books %}
+  {% endfor %}
+  {% for book in books %}
     <div class="book">
       <div class="book-cover">
         <a href="{{ book.url }}" class="book-cover-link">
@@ -59,5 +62,6 @@ nav_id: home
         </a>
       </div>
     </div>
-  {% endfor %}-->
+  {% endfor %}
 </div>
+{% endcomment %}
