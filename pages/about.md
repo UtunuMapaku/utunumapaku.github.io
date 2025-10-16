@@ -13,6 +13,6 @@ His second book, *Far Flung*, was published in the summer of 2024. It won the 20
 
 He’s also published *Echoes*, a fantasy anthology of his short stories and poems, which was released in 2025.
 
-He enjoys reading, writing, boardgames, commissioning artwork, nature, tabletop RPGs, ancient history, obscure languages, conlangs, worldbuilding, proper football, linguistics, and the Oxford comma.
+He enjoys reading, writing, board games, commissioning artwork, nature, tabletop RPGs, ancient history, obscure languages, conlangs, worldbuilding, proper football, linguistics, and the Oxford comma.
 
 Utunu resides near Austin, Texas with his wife, son, daughter, three dogs, zero fennecs, and several Kallax units filled with board games he wishes he could play more often.
