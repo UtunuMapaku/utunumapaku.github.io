@@ -44,6 +44,16 @@ body {
   color: $body-text-color;
 }
 
+// CSS HACK: Push footer to the bottom of the page. (CSS is a joy to work with...)
+body {
+  // Expand page to always fill the window.
+  min-height: 100vh;
+  // You have to use display: flex to make min-height work (default is display: block)
+  display: flex;
+  // stack header, content, and footer vertically (default "row" stacks them horizontally)
+  flex-direction: column;
+}
+
 .site-header {
   width: 100%;
   position: relative;
@@ -109,6 +119,24 @@ nav.site-nav {
   }
 }
 
+cite.cite-right {
+  display: block;
+  font-size: 1em;
+  text-align: right;
+  &:before {
+    content: "— ";
+  }
+}
+
+cite.cite-left {
+  display: block;
+  font-size: 1em;
+  text-align: left;
+  &:before {
+    content: "— ";
+  }
+}
+
 .site-content {
   display: block;
   max-width: $max-content-width;
@@ -128,17 +156,6 @@ nav.site-nav {
   font-size: 0.8em;
   padding: 1.7em 1.6%;
   background-color: black;
-
-  blockquote {
-    cite {
-      display: block;
-      font-size: 1em;
-      text-align: right;
-      &:before {
-        content: "— ";
-      }
-    }
-  }
 }
 
 .site-footer-inner {

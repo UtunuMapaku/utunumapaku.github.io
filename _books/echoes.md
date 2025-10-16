@@ -4,7 +4,7 @@ cover: /images/echoes-cover.webp
 back_cover: /images/echoes-back-cover.webp
 adult: false
 date: 2025-02-06
-goodreads: https://www.goodreads.com/book/show/214091957-far-flung?ref=nav_sb_ss_1_12
+goodreads: https://www.goodreads.com/book/show/228642701-echoes
 book_url: https://mapakuvillage.square.site/product/echoes/11?cp=true&sa=true&sbp=false&q=false
 ebook_url: https://mapakuvillage.square.site/product/echoes-e-book-/12?cp=true&sa=true&sbp=false&q=false
 ---
