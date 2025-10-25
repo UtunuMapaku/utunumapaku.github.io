@@ -42,18 +42,23 @@ nav_id: home
       </p>
     </div>
 </div>
-{% comment %}
 <div class="home-books">
   {% assign books = site.books | sort: "date" %}
   {% for book in books %}
+    <div>
+      <img src="{{ book.cover }}" width="10%">
+    </div>
+    {% comment %}
     <div class="book">
       <div class="book-cover">
         <a href="{{ book.url }}" class="book-cover-link">
-          <img src="{{ book.cover }}" alt="{{ book.title }} cover" />
+          <img src="{{ book.cover }}" width="50" alt="{{ book.title }} cover" />
         </a>
       </div>
     </div>
+    {% endcomment %}
   {% endfor %}
+  {% comment %}
   {% for book in books %}
     <div class="book">
       <div class="book-cover">
@@ -63,5 +68,5 @@ nav_id: home
       </div>
     </div>
   {% endfor %}
+  {% endcomment %}
 </div>
-{% endcomment %}
