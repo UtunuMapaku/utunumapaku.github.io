@@ -45,9 +45,11 @@ nav_id: home
 <div class="home-books">
   {% assign books = site.books | sort: "date" %}
   {% for book in books %}
+    {% comment %}
     <div>
       <img src="{{ book.cover }}" width="10%">
     </div>
+    {% endcomment %}
     {% comment %}
     <div class="book">
       <div class="book-cover">
