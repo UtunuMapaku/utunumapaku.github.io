@@ -5,8 +5,8 @@
 }
 
 .home-books {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
   align-items: center;
-  gap: 1em;
+  display: flex;
+  flex-direction: row;
 }
