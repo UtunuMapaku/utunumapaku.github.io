@@ -5,7 +5,7 @@ permalink: /books/
 nav_id: books
 ---
 <div class="books-list">
-  {% assign books = site.books | sort: "date" %}
+  {% assign books = site.books | sort: "priority" %}
   {% for book in books %}
     <div class="book">
       <div class="book-cover">
@@ -15,6 +15,12 @@ nav_id: books
       </div>
       <div class="book-info">
         <h1 class="book-title"><a href="{{ book.url }}">{{ book.title }}</a></h1>
+        {% if book.subtitle %}
+          <p class="book-subtitle"><strong>{{ book.subtitle }}</strong></p>
+        {% endif %}
+        {% if book.award %}
+          <p class="book-award"><i>{{ book.award }}</i></p>
+        {% endif %}
         {{book.content}}
         <br />
       </div>

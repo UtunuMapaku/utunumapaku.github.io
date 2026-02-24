@@ -1,9 +1,12 @@
 ---
 title: Rafts
+subtitle:
+award: 2023 Cóyotl Award for Best Novella
 cover: /images/rafts-cover.webp
 back_cover: /images/rafts-back-cover.webp
 adult: true
-date: 2023-01-19
+publish_date: 2023-01-19
+priority: 1
 goodreads: https://www.goodreads.com/book/show/108517888-rafts
 book_url: https://mapakuvillage.square.site/product/rafts/1?cp=true&sa=true&sbp=false&q=false
 ebook_url: https://mapakuvillage.square.site/product/rafts-e-book-/2?cp=true&sa=true&sbp=false&q=false
