@@ -1,9 +1,12 @@
 ---
 title:
+subtitle:
+award:
 front_cover:
 back_cover:
 adult:
-date:
+publish_date:
+priority:
 goodreads:
 book_url:
 ebook_url:

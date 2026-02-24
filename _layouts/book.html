@@ -12,6 +12,16 @@ layout: default
   </div>
   <div class="book-info">
     <h1 class="book-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p>
+        <strong>{{ page.subtitle }}</strong>
+      </p>
+    {% endif %}
+    {% if page.award %}
+      <p>
+        <i>{{ page.award }}</i>
+      </p>
+    {% endif %}
     <div class="book-description">{{ page.content }}</div>
     {% if page.content_warning %}
       <p class="book-content-warning">

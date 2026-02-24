@@ -1,9 +1,12 @@
 ---
 title: Far Flung
+subtitle: Book One of the Far Flung Trilogy
+award: 2024 Cóyotl Award for Best Novel
 cover: /images/far-flung-cover.webp
 back_cover: /images/far-flung-back-cover.webp
 adult: false
-date: 2024-07-05
+publish_date: 2024-07-05
+priority: 2
 goodreads: https://www.goodreads.com/book/show/214091957-far-flung?ref=nav_sb_ss_1_12
 book_url: https://mapakuvillage.square.site/product/far-flung/3?cp=true&sa=true&sbp=false&q=false
 ebook_url: https://mapakuvillage.square.site/product/far-flung-e-book-/4?cp=true&sa=true&sbp=false&q=false
