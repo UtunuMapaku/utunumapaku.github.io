@@ -7,6 +7,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
 end
 
+$: << "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/tzinfo-data-1.2026.2/lib"
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do

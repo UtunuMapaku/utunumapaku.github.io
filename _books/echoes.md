@@ -1,7 +1,7 @@
 ---
 title: Echoes
 subtitle:
-award:
+award: 2025 Cóyotl Award for Best Anthology
 cover: /images/echoes-cover.webp
 back_cover: /images/echoes-back-cover.webp
 adult: false
